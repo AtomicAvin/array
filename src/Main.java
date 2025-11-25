@@ -19,6 +19,7 @@ public class Main {
         System.out.println("Task 2");
         System.out.println(Arrays.toString(array));
         System.out.println(Arrays.toString(fraction));
+        System.out.println(Arrays.toString(arrayNew));
 
         System.out.println("Task 3");
         for (int i = 0; i < array.length / 2; i++) {
@@ -34,6 +35,17 @@ public class Main {
             fraction[fraction.length - 1 - i] = temp;
         }
         System.out.println(Arrays.toString(fraction));
+
+        for (int i = 0; i < arrayNew.length / 2; i++) {
+            int temp = arrayNew[i];
+            arrayNew [i] = arrayNew[arrayNew.length - 1 - i];
+            arrayNew[arrayNew.length - 1 - i] = temp;
+        }
+        System.out.println(Arrays.toString(arrayNew));
+
+
+
+
 
         System.out.println("Task 4");
         int [] arr = new int[]{1, 2, 3};
